@@ -1,0 +1,106 @@
+html,
+td {
+  font-size: xx-small;
+}
+
+.phases-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.phase {
+  text-align: center;
+  background-color: #404040;
+  padding: 10px;
+  margin: 20px;
+  margin-bottom: 0px;
+  border: 4px solid #202020;
+  border-radius: 10px;
+  flex-basis: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.matches-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.match-spacer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.match-container {
+  margin: 2px;
+  background-color: #303030;
+  border: 2px solid #202020;
+  border-radius: 6px;
+  padding-right: 4px;
+  display: flex;
+}
+
+.match-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  margin-right: 4px;
+}
+
+.match {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.match tr:first-of-type td {
+  border-bottom: 1px solid #808080;
+}
+
+.match tr td:first-of-type {
+  text-align: left;
+}
+
+.match tr td {
+  text-align: right;
+  padding: 5px;
+  border-collapse: collapse;
+}
+.match tr td:last-of-type {
+  width: 60px;
+}
+
+.collapse-button {
+  width: 16px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  html,
+  td {
+    font-size: larger;
+  }
+
+  .phases-container {
+    flex-direction: column;
+  }
+
+  .match-spacer {
+    flex-basis: 0px;
+  }
+
+  .phase {
+    flex-basis: 0;
+  }
+
+  .collapse-button {
+    display: inline-block;
+  }
+
+}

@@ -1,0 +1,52 @@
+.ranking-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.ranking {
+  background-color: #404040;
+  width: fit-content;
+  padding: 10px;
+  margin: 20px;
+  border: 4px solid #202020;
+  border-radius: 10px;
+  flex-basis: 300px;
+}
+
+.ranking table {
+  width: 100%;
+}
+
+.ranking table,
+.ranking td,
+.ranking th {
+  border: 1px solid #202020;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.ranking td {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  html,
+  td {
+    font-size: larger;
+  }
+
+  .ranking-container {
+    flex-direction: column;
+  }
+
+  .ranking {
+    width: inherit;
+    flex-basis: auto;
+  }
+
+  .ranking table {
+    width: 100%;
+  }
+}
