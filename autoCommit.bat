@@ -1,8 +1,5 @@
-#!/bin/bash
-
-TIMESTAMP=$(date +%c)
 git add .
-git commit -m "Auto update $TIMESTAMP"
+git commit -m "Auto update %date% at %time%"
 git push origin main
 
 pause
