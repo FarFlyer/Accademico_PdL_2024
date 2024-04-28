@@ -63,4 +63,8 @@
     flex-direction: column;
   }
 
+  .phase {
+    margin: 0;
+  }
+
 }

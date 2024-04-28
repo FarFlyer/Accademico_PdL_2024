@@ -22,19 +22,19 @@ html {
   border-radius: 10px;
 }
 
-.link-box a:link {
+a:link {
   color: white;
 }
 
-.link-box a:visited {
+a:visited {
   color: white;
 }
 
-.link-box a:hover {
+a:hover {
   color: grey;
 }
 
-.link-box a:active {
+a:active {
   color: grey;
 }
 
@@ -49,6 +49,12 @@ html {
   width: 100%;
 }
 
+.subtitle {
+  text-align: center;
+  font-size: x-small;
+  width: 100%;
+}
+
 .collapse {
   display: none;
 }
@@ -58,19 +64,6 @@ html {
   align-self: flex-end;
 }
 
-@media screen and (max-width: 768px) {
-  .small-screen {
-    display: inherit;
-  }
-
-  .collapse:checked+.collapsible {
-    display: none
-  }
-
-  label {
-    cursor: pointer;
-  }
-}
 
 .menu-box {
   text-align: center;
@@ -97,4 +90,22 @@ html {
 
 .menu-box a:hover {
   background-color: #808080;
+}
+
+@media screen and (max-width: 768px) {
+  .small-screen {
+    display: inherit;
+  }
+
+  .link-box {
+    margin: 0;
+  }
+
+  .collapse:checked+.collapsible {
+    display: none
+  }
+
+  label {
+    cursor: pointer;
+  }
 }
